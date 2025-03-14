@@ -1,13 +1,14 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StartUI {
 
     private Store store;
-    private ConsoleInput consoleInput;
 
-    public StartUI(Store store, ConsoleInput consoleInput) {
+    public StartUI(Store store) {
         this.store = store;
-        this.consoleInput = consoleInput;
     }
 
     public void add(String value) {
