@@ -9,6 +9,7 @@ public class StartUI {
         this.store = store;
         this.consoleInput = consoleInput;
     }
+
     public void add(String value) {
         store.add(value);
     }
